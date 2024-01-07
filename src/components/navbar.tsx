@@ -28,6 +28,12 @@ const NavLeft = styled.div`
   align-items: center;
   img {
   }
+
+  @media (max-width: 900px) {
+    img {
+      widht: 100px !important;
+    }
+  }
 `;
 
 const NavRight = styled.div`

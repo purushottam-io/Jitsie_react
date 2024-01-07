@@ -10,6 +10,15 @@ const Heading = styled.div`
 
   @media (max-width: 900px) {
     margin-top: 1em;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    span {
+      margin: auto;
+      width: 80%;
+    }
   }
 
   h1 {

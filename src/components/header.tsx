@@ -66,6 +66,8 @@ const HeaderTop = styled.div`
  }
         @media (max-width:900px){
           justify-content:center;
+          font-size:1em;
+          padding:0.5em 0.8em;
         }
       }
     }
@@ -96,6 +98,17 @@ const HeaderTop = styled.div`
     }
     
   }}
+
+  @media (max-width:950px){
+
+    & .left {
+      h1{
+      font-size:2em !important;
+      }
+      
+    }
+    
+  }
 
   
   
