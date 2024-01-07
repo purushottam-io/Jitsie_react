@@ -26,10 +26,11 @@ const ContentContainer = styled.div`
 
   margin-bottom: 2em;
   & .CardContainer {
-    display: grid;
     gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     margin: 3em auto;
+    justify-content: space-evenly;
   }
 `;
 
@@ -76,6 +77,21 @@ const TeamPage = () => {
   return (
     <MainContainer>
       <h1>Our Team</h1>
+      <ContentContainer>
+        <h2>Admin Team</h2>
+        <hr />
+        <div className="CardContainer">
+          {L.map((dev: any) => (
+            <TeamCard
+              name={dev.name}
+              imgLink={dev.image}
+              desg={dev.position}
+              desc={dev.description}
+            />
+          ))}
+        </div>
+      </ContentContainer>
+
       <ContentContainer>
         <h2>Web Dev.</h2>
         <hr />
