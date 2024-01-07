@@ -16,7 +16,7 @@ const NavContainer = styled.div`
     // border: 1px solid white;
     display: flex;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.5em;
     @media (min-width: 900px) {
       display: none;
     }
