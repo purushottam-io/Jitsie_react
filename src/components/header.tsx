@@ -181,7 +181,6 @@ const Header = () => {
 
           <div className="buttons">
             <button>Contact Us</button>
-            <Link to="/blogs">Hello</Link>
             <button style={{ background: "black", border: "1px solid white" }}>
               Join Us
             </button>
