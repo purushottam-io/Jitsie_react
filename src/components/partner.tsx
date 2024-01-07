@@ -25,6 +25,7 @@ const MainContainer = styled.div`
   @media (max-width: 1250px) {
     h1 {
       font-size: 1.5em;
+      margin: 1em;
     }
   }
 `;

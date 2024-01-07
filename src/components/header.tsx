@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import hImg from "../assets/head_img.png";
 import { Typewriter } from "react-simple-typewriter";
-import { Link } from "react-router-dom";
 
 const HeaderContainer = styled.div`
   // border: 1px solid white;
