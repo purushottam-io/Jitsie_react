@@ -63,11 +63,16 @@ const HeaderTop = styled.div`
         border-radius: 10px;
         font-weight: bold;
         background-color: #3b54c5;
+
+        @media (max-width:800px){
+          font-size:1em;
+          padding: 0.8em;
+          
+        }
  }
         @media (max-width:900px){
           justify-content:center;
-          font-size:1em;
-          padding:0.5em 0.8em;
+          
         }
       }
     }
