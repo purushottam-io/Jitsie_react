@@ -145,7 +145,7 @@ const Navbar = () => {
             <Link to="./">Home </Link>
             <Link to="/">Events </Link>
             <Link to="/blogs">Blogs </Link>
-            <Link to="/">Team </Link>
+            <Link to="/team">Team </Link>
             <Link to="/">Contact </Link>
           </div>
           <button>join Us</button>

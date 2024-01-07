@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homepage";
 import BlogMainPage from "./pages/blogsMain";
+import TeamPage from "./pages/teamPage";
 
 const MainContainer = styled.div`
   border: 1px solid black;
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blogs" element={<BlogMainPage />} />
+          <Route path="/team" element={<TeamPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
