@@ -103,7 +103,7 @@ const HeaderTop = styled.div`
 
     & .left {
       h1{
-      font-size:2em !important;
+      font-size:3em !important;
       }
       
     }

@@ -16,7 +16,6 @@ const Heading = styled.div`
     }
 
     span {
-      margin: auto;
       width: 80%;
     }
   }
