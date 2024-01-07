@@ -11,7 +11,7 @@ import im4 from "../assets/cm4.png";
 import im5 from "../assets/cm5.png";
 
 const MainContainer = styled.div`
-  //   border: 1px solid white;
+  // border: 1px solid white;
   margin: 5% 10%;
   margin-bottom: 0;
   display: flex;
@@ -23,9 +23,9 @@ const MainContainer = styled.div`
   }
 
   @media (max-width: 1250px) {
+    margin: 0;
     h1 {
       font-size: 1.5em;
-      margin: 1em;
     }
   }
 `;
@@ -34,7 +34,7 @@ const MarqueeContainer = styled.div`
   //   border: 1px solid white;
   width: 50%;
   margin: 1em auto;
-  padding: 2em;
+  padding: 2em 0;
 
   img {
     // border: 1px solid white;

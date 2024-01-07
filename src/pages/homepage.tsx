@@ -11,6 +11,10 @@ const MainContainer = styled.div`
   padding: 1em;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
+
+  @media (max-width: 900px) {
+    padding: 0;
+  }
 `;
 
 const HomePage = () => {
