@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import hImg from "../assets/head_img.png";
 import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 const HeaderContainer = styled.div`
   // border: 1px solid white;
@@ -180,9 +181,13 @@ const Header = () => {
 
           <div className="buttons">
             <button>Contact Us</button>
-            <button style={{ background: "black", border: "1px solid white" }}>
-              Join Us
-            </button>
+            <Link to="/blogs">
+              <button
+                style={{ background: "black", border: "1px solid white" }}
+              >
+                Join Us
+              </button>
+            </Link>
           </div>
         </div>
         <div className="right">
