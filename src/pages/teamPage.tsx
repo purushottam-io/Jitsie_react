@@ -38,43 +38,37 @@ let L = [
     name: "Prashant mehta",
     image: "https://picsum.photos/200/300",
     position: "CEO",
-    description:
-      "He is the brilliant minded dev of the Ozone Labs Team who have many experinced than other dev there",
+    description: " Team who have many experinced than other dev there",
   },
   {
     name: "Prashant mehta",
     image: "https://picsum.photos/200/300",
     position: "CEO",
-    description:
-      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+    description: " Team who have many experinced than other dev there",
   },
   {
     name: "Prashant mehta",
     image: "https://picsum.photos/200/300",
     position: "CEO",
-    description:
-      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+    description: " Team who have many experinced than other dev there",
   },
   {
     name: "Prashant mehta",
     image: "https://picsum.photos/200/300",
     position: "CEO",
-    description:
-      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+    description: " Team who have many experinced than other dev there",
   },
   {
     name: "Prashant mehta",
     image: "https://picsum.photos/200/300",
     position: "CEO",
-    description:
-      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+    description: " Team who have many experinced than other dev there",
   },
   {
     name: "Prashant mehta",
     image: "https://picsum.photos/200/300",
     position: "CEO",
-    description:
-      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+    description: " Team who have many experinced than other dev there",
   },
 ];
 
