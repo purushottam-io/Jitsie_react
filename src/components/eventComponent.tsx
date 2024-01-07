@@ -105,6 +105,7 @@ const ContentContainer = styled.div`
 
   @media (max-width: 700px) {
     flex-direction: column;
+    margin-top: 2em;
 
     & .left {
       width: 100%;
