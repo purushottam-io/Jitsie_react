@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+
+interface SudoMenuProps {
+  visible: boolean;
+}
 
 const NavContainer = styled.div`
   display: flex;
@@ -11,6 +15,7 @@ const NavContainer = styled.div`
   max-width: 2000px;
   margin: auto;
   font-family: "Inter", sans-serif;
+  position: relative;
 
   & .h_bar {
     // border: 1px solid white;
@@ -21,6 +26,10 @@ const NavContainer = styled.div`
       display: none;
     }
   }
+`;
+
+const SudoNavCont = styled.div`
+  flex-direction: column;
 `;
 
 const NavLeft = styled.div`
@@ -72,26 +81,101 @@ const NavRight = styled.div`
   }
 `;
 
+const SudoMenu = styled.div<SudoMenuProps>`
+  // border: 1px solid white;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: black;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: ${(props) => (props.visible ? "block" : "none")};
+  opacity: ${(props) => (props.visible ? 1 : 0)};
+  ttransition: opacity 2s ease, transform 2s ease;
+  transform: translateY(${(props) => (props.visible ? "0" : "-20px")});
+  &.notshow {
+    display: none;
+  }
+
+  @media (min-width: 900px) {
+    display: none;
+  }
+
+  & .sudo_menu_class {
+    // border: 1px solid white;
+    width: 80vw;
+    height: auto;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+    a {
+      padding: 1em;
+      text-decoration: none;
+    }
+  }
+
+  i {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    font-size: 3em;
+  }
+`;
+
 const Navbar = () => {
+  const [sudoMenuVisible, setSudoMenuVisible] = useState(false);
+
+  const toggleSudoMenu = () => {
+    setSudoMenuVisible(!sudoMenuVisible);
+  };
   return (
-    <NavContainer>
-      <div className="h_bar">
-        <i className="fa-solid fa-bars"></i>
-      </div>
-      <NavLeft>
-        <img src={logo} alt="" />
-      </NavLeft>
-      <NavRight>
-        <div className="Nav_tabs">
-          <Link to="./">Home </Link>
-          <Link to="/">Events </Link>
-          <Link to="/blogs">Blogs </Link>
-          <Link to="/">Team </Link>
-          <Link to="/">Contact </Link>
+    <SudoNavCont>
+      <NavContainer>
+        <div className="h_bar" onClick={toggleSudoMenu}>
+          <i className="fa-solid fa-bars"></i>
         </div>
-        <button>join Us</button>
-      </NavRight>
-    </NavContainer>
+        <NavLeft>
+          <img src={logo} alt="" />
+        </NavLeft>
+        <NavRight>
+          <div className="Nav_tabs">
+            <Link to="./">Home </Link>
+            <Link to="/">Events </Link>
+            <Link to="/blogs">Blogs </Link>
+            <Link to="/">Team </Link>
+            <Link to="/">Contact </Link>
+          </div>
+          <button>join Us</button>
+        </NavRight>
+      </NavContainer>
+
+      <SudoMenu
+        className={sudoMenuVisible ? "show" : "notshow"}
+        visible={sudoMenuVisible}
+      >
+        <div className="sudo_menu_class">
+          <Link to="./" onClick={toggleSudoMenu}>
+            Home
+          </Link>
+          <Link to="/" onClick={toggleSudoMenu}>
+            Events
+          </Link>
+          <Link to="/blogs" onClick={toggleSudoMenu}>
+            Blogs
+          </Link>
+          <Link to="/" onClick={toggleSudoMenu}>
+            Team
+          </Link>
+          <Link to="/" onClick={toggleSudoMenu}>
+            Contact
+          </Link>
+        </div>
+        <i className="fa-regular fa-circle-xmark" onClick={toggleSudoMenu}></i>
+      </SudoMenu>
+    </SudoNavCont>
   );
 };
 
