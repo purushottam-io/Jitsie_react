@@ -7,7 +7,7 @@ const MainContainer = styled.div`
   font-family: "Inter", sans-serif;
 
   margin: auto;
-  border: 1px solid white;
+  // border: 1px solid white;
   display: flex;
   flex-direction: column;
   h1 {
@@ -19,21 +19,56 @@ const MainContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  border: 1px solid white;
+  // border: 1px solid white;
   h2 {
     margin-bottom: 0;
   }
 
-  margin: auto;
   margin-bottom: 2em;
   & .CardContainer {
     display: grid;
     gap: 2em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 3em auto;
   }
 `;
 
 let L = [
+  {
+    name: "Prashant mehta",
+    image: "https://picsum.photos/200/300",
+    position: "CEO",
+    description:
+      "He is the brilliant minded dev of the Ozone Labs Team who have many experinced than other dev there",
+  },
+  {
+    name: "Prashant mehta",
+    image: "https://picsum.photos/200/300",
+    position: "CEO",
+    description:
+      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+  },
+  {
+    name: "Prashant mehta",
+    image: "https://picsum.photos/200/300",
+    position: "CEO",
+    description:
+      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+  },
+  {
+    name: "Prashant mehta",
+    image: "https://picsum.photos/200/300",
+    position: "CEO",
+    description:
+      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+  },
+  {
+    name: "Prashant mehta",
+    image: "https://picsum.photos/200/300",
+    position: "CEO",
+    description:
+      "He is the main dev of the Ozone Labs Team who have many experinced than other dev there",
+  },
   {
     name: "Prashant mehta",
     image: "https://picsum.photos/200/300",
